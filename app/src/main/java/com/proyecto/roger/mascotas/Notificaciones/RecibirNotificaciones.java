@@ -46,14 +46,16 @@ public class RecibirNotificaciones extends AppCompatActivity {
             @Override
             public void onResponse(Call<UsuarioResponse> call, Response<UsuarioResponse> response) {
                 UsuarioResponse usuarioResponse = response.body();
-                //Log.d("ID_FIREBASE", usuarioResponse.getId());
-                //Log.d("TOKEN_FIREBASE", usuarioResponse.getToken());
+                Log.d("ID_FIREBASE", usuarioResponse.getId());
+                Log.d("TOKEN_FIREBASE", usuarioResponse.getToken());
+                Log.d("ID_INSTAGRAM", usuarioResponse.getAnimal());
             }
 
             @Override
             public void onFailure(Call<UsuarioResponse> call, Throwable t) {
-
             }
         });
+
+
     }
 }

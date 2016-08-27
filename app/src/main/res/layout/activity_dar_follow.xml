@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proyecto.roger.mascotas.DarFollow">
+
+    <include android:id="@id/miToolbar"
+        layout="@layout/action_bar"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_below="@+id/miToolbar">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:text="asd"
+            android:id="@+id/cuentaFollow"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"/>
+
+
+        <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/fotoReciente"
+            android:src="@drawable/common_full_open_on_phone"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/fotoReciente2"
+            android:src="@drawable/common_full_open_on_phone"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/fotoReciente3"
+            android:src="@drawable/common_full_open_on_phone"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/fotoReciente4"
+            android:src="@drawable/common_full_open_on_phone"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/fotoReciente5"
+            android:src="@drawable/common_full_open_on_phone"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/fotoReciente6"
+            android:src="@drawable/common_full_open_on_phone"/>
+
+    </GridLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/miToolbar"
+        android:text="Follow"
+        android:id="@+id/follow"
+        android:onClick="darFollow" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/follow"
+        android:layout_below="@id/miToolbar"
+        android:text="Unfollow"
+        android:id="@+id/unfollow"
+        android:onClick="darUnfollow"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

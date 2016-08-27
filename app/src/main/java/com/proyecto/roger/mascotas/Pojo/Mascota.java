@@ -11,6 +11,7 @@ Mascota {
     private String urlFoto;
     private int likes = 0;
     private String urlFotoPerfil;
+    private String idMedia;
 
     public Mascota(String urlFoto, String nombreCompleto, String telefono, String email, int likes){
         this.urlFoto = urlFoto;
@@ -61,4 +62,11 @@ Mascota {
         this.likes = likes;
     }
 
+    public String getIdMedia() {
+        return idMedia;
+    }
+
+    public void setIdMedia(String idMedia) {
+        this.idMedia = idMedia;
+    }
 }

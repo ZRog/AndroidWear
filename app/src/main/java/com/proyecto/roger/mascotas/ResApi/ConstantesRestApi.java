@@ -18,8 +18,12 @@ public final class ConstantesRestApi {
     public static final String ID_GET_RECENT_MEDIA = "users/";
     public static final String ID_GET_RECENT_MEDIA2 = "/media/recent/?access_token=";
 
-    public static final String[] USUARIOS = {"jonatanpere","jbertri"};
+    public static final String[] USUARIOS = {"jonatanpere","jbertri","barneyrog"};
 
+
+    public static final String KEY_TOQUE = "toque/{id}/{idusuario}/{idenvio}/";
+
+    public static final String KEY_POST_LIKE = "registrar-like/";
 
     public static final String ROOT_URL_HEROKU = "https://mighty-ocean-94874.herokuapp.com/";
     public static final String KEY_POST_ID_TOKEN = "registrar-usuario/";

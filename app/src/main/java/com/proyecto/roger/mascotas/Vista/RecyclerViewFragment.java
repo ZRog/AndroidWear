@@ -29,7 +29,7 @@ public class RecyclerViewFragment extends Fragment implements IRecyclerViewFragm
     private RecyclerView rvMascotas;
     private IRecyclerViewFragmentPresenter presenter;
     public static boolean carga = false;
-    public static String cuenta = "";
+    public static String cuenta = "barneyrog";
     public static String idcuenta = "3446513169";
     private CircularImageView circularImageView;
     public static String imagen = "";

@@ -1,7 +1,5 @@
 package com.proyecto.roger.mascotas.Notificaciones;
 
-import android.util.Log;
-
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 
@@ -13,11 +11,8 @@ public class NotificacionIdTokenService extends FirebaseInstanceIdService {
     @Override
     public void onTokenRefresh() {
         String token = FirebaseInstanceId.getInstance().getToken();
-        enviarTokenRegistro(token);
     }
 
     private static final String TAG = "FIREBASE_TOKEN";
-    private void enviarTokenRegistro(String token){
-        Log.d(TAG,token);
-    }
+
 }
